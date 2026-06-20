@@ -1,0 +1,5 @@
+{
+  "dll": "IceSchoolMod.dll",
+  "entryClass": "IceSchoolMod.Main",
+  "displayName": "寒冰流派"
+}

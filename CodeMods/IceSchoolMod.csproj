@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>IceSchoolMod</AssemblyName>
+    <RootNamespace>IceSchoolMod</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>.</OutputPath>
+    <!-- 编译时需要设置 GameManagedPath 指向游戏 Managed 目录，或通过环境变量设置 -->
+    <!-- 示例: dotnet build -p:GameManagedPath="D:\Steam\steamapps\common\DemonLordJustABlock\DemonLordJustABlock_Data\Managed" -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(GameManagedPath)\Assembly-CSharp.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameManagedPath)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Harmony 由 00HarmonyLoader 创意工坊模组提供 (ID: 3716839341) -->
+    <!-- 编译时将 0Harmony.dll 放到 CodeMods/ 目录或使用 HintPath 指向创意工坊路径 -->
+    <Reference Include="0Harmony">
+      <HintPath>$(HarmonyPath)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+{
+  "title": "寒冰流派 V0.2.8",
+  "description": "寒冰流派 Mod\n\n新增寒冰流派 (ID: 100260620)：15 个冰冻主题技能。\n\n核心机制：冰冻控制 + 冰冻增伤。\n\nV0.2.8：\n- 修复寒冰反射：绕过大体型敌人 20 回合冰冻免疫\n- 移除调试日志\n\n依赖：\n- 00HarmonyLoader\n- SchoolCardLib",
+  "author": "TOKGOK",
+  "version": "0.2.8",
+  "dependencies": ["00HarmonyLoader", "SchoolCardLib"]
+}
