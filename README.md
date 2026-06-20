@@ -1,6 +1,6 @@
 # 寒冰流派 Mod
 
-为《恶魔之塔 DemonLord JustABlock》新增寒冰流派，包含 15 个冰冻主题技能。
+为《卡片魔王：只剩个头》（DemonLord JustABlock）新增寒冰流派，包含 15 个冰冻主题技能。
 
 ## 功能介绍
 
